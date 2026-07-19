@@ -41,6 +41,17 @@
   "jsnext:main": "lib-esm/index.js",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "module": "./lib-esm/index.js",
+      "default": "./lib/index.js"
+    },
+    "./lib/*": "./lib/*",
+    "./lib-esm/*": "./lib-esm/*",
+    "./_bundles/*": "./_bundles/*",
+    "./package.json": "./package.json"
+  },
   "license": "MIT",
   "peerDependencies": {
     "@uirouter/core": ">=5.0.0"
