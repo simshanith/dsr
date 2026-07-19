@@ -15,7 +15,7 @@ declare module '@uirouter/core/lib/state/stateObject' {
 
 export type ParamPredicate = (param: Param) => boolean;
 export type DSRProp = boolean | string | DSRFunction | DSRConfigObj;
-export type DSRFunction = (...args) => boolean | DSRTarget;
+export type DSRFunction = (...args) => boolean | DSRTarget | TargetState;
 export interface DSRTarget {
   state?: StateOrName;
   params?: RawParams;
